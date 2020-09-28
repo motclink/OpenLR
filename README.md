@@ -1,26 +1,10 @@
 # OpenLR 轉換範例程式碼說明
 為加速開發者能快速使用交通路段基礎資訊查詢系統（Link）開放之OpenLR資料服務，將來自TomTom OpenLR標準規範之範例程式碼提供開發者下載，使用者可於開發環境開啟後即可依範例程式碼自行擴充，降低學習曲線。
 
-## Installation
-
-要構建所有模塊，請使用 project 相關資料夾:
-
-```maven
-mvn clean install
-```
-
-要單獨構建模塊，請使用 module 相關資料夾：
-
-
-```maven
-mvn clean install
-```
-
-## 用法
+## 說明
 
 ### `encoder`
-編碼器套件中包含OpenLR編碼器的參考實現。
-它以一個（取決於地圖的）位置作為輸入，並生成一個對應的（與地圖無關的）位置參考。該軟體套件使用 OpenLR map 和 OpenLR data。
+TomTom 編碼器套件中包含OpenLR編碼器的參考，以一個（取決於地圖的）位置作為輸入，並生成一個對應的（與地圖無關的）位置參考。該軟體套件使用 OpenLR map 和 OpenLR data。
 
 ### `map`
 地圖套件包括地圖界面和地圖工具所使用的OpenLR編碼器和解碼器。此軟體套件的用戶需要實施所需的方法和需要將內部數據結構轉換為OpenLR map介面。
