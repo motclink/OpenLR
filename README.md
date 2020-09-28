@@ -16,9 +16,7 @@ mvn clean install
 mvn clean install
 ```
 
-## Usage
-
-There are 9 modules:
+## 用法
 
 ### `encoder`
 編碼器套件中包含OpenLR編碼器的參考實現。
