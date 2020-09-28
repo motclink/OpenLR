@@ -1,0 +1,19 @@
+language: java
+
+sudo: false
+
+jdk:
+  - openjdk8
+
+install:
+  - mvn install -DskipTests
+
+script:
+  - mvn verify
+
+after_success:
+  - mvn clean cobertura:cobertura org.eluder.coveralls:coveralls-maven-plugin:report
+
+cache:
+  directories:
+    - $HOME/.m2

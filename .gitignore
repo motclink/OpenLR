@@ -1,0 +1,9 @@
+.idea/
+.project/
+.settings/
+.classpath/
+target/
+bin/
+*.iml
+*.class
+JAXB/
